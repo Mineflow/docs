@@ -3,4 +3,4 @@
 # Mineflow
 
 [GitHub](https://github.com/aieuo/Mineflow/)
-<a href="/eng/#/README">Read docs</a>
+<a href="/docs/eng/#/README">Read docs</a>

@@ -3,4 +3,4 @@
 # Mineflow
 
 [GitHub](https://github.com/aieuo/Mineflow/)
-<a href="/jpn/#/README">Read docs</a>
+<a href="/docs/jpn/#/README">Read docs</a>
