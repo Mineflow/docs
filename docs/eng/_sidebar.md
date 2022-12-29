@@ -1,0 +1,12 @@
+- [Home](/README.md)
+- Variable
+  - [About variable](/variable/about.md)
+  - [Variable types](/variable/types.md)
+  - [Default variables](/variable/default.md)
+- Trigger
+  - [Command trigger](/trigger/command.md)
+  - [Block trigger](/trigger/block.md)
+  - [Form trigger](/trigger/form.md)
+  - [Time trigger](/trigger/time.md)
+  - [Event trigger](/trigger/event.md)
+  - [Custom trigger](/trigger/custom.md)

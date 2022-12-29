@@ -1,0 +1,183 @@
+:root {
+    --base-form-width: 225;
+    --base-form-height: 200;
+    --base-title-height: 10;
+    --base-button-height: 32;
+    --base-input-height: 30;
+    --base-toggle-width: 8;
+
+    --form-width: min(calc(var(--base-form-width) * 2px), 90vw);
+    --form-height: calc(var(--form-width) / var(--base-form-width) * var(--base-form-height));
+    --title-height: calc(var(--form-width) / var(--base-form-width) * var(--base-title-height));
+    --button-height: calc(var(--form-width) / var(--base-form-width) * var(--base-button-height));
+    --input-height: calc(var(--form-width) / var(--base-form-width) * var(--base-input-height));
+    --toggle-height: calc(var(--input-height) * 0.45);
+    --toggle-width: calc(var(--form-width) / var(--base-form-width) * var(--base-toggle-width));
+
+    --color-frame: #c6c6c6;
+    --color-shadow-frame-dark: #555;
+    --color-shadow-frame-light: #fff;
+    --color-selected: #218306;
+    --color-shadow-selected-dark: #004e00;
+    --color-shadow-selected-light: #17cd07;
+}
+
+.form {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    width: var(--form-width);
+    height: var(--form-height);
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: var(--color-frame);
+    box-shadow: -4px -4px 0 var(--color-shadow-frame-dark) inset, 4px 4px 0 var(--color-shadow-frame-light) inset;
+}
+
+.form .title {
+    height: var(--title-height);
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+.form .panel {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 8px;
+    padding: 6px 8px;
+    background-color: rgba(33, 33, 33, 0.75);
+    box-shadow: -2px -2px 0 var(--color-shadow-frame-light) inset, 2px 2px 0 var(--color-shadow-frame-dark) inset;
+}
+
+.form .panel .form-content {
+    padding: 0;
+    color: #aaa;
+}
+
+.form .panel .scrolling-content {
+    overflow-y: auto;
+    padding-bottom: 8px;
+}
+
+.form .panel .button {
+    line-height: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--button-height);
+    margin: 0 6px;
+    border: 2px solid black;
+    background-color: var(--color-frame);
+    box-shadow: -2px -2px 0 var(--color-shadow-frame-dark) inset, 2px 2px 0 var(--color-shadow-frame-light) inset;
+}
+
+.form .panel .button.selected {
+    color: white;
+    border: 2px solid white;
+    background-color: var(--color-selected);
+    box-shadow: -2px -2px 0 var(--color-shadow-selected-dark) inset, 2px 2px 0 var(--color-shadow-selected-light) inset;
+}
+
+.form .panel label {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0 6px;
+    color: #fff;
+}
+
+.form .panel input[type="text"] {
+    width: 100%;
+    height: var(--input-height);
+    padding-left: 0.5em;
+    color: #fff;
+    border: 2px solid black;
+    background-color: #5e5e5e;
+    box-shadow: 0 -2px 0 #b2b2b2 inset, 0 2px 0 #464446 inset;
+}
+
+.form .panel input[type="checkbox"] {
+    background-color: #404040;
+}
+
+.form .panel input:focus, .form .panel input:hover {
+    border: 2px solid white;
+    outline: none;
+}
+
+.form .panel select {
+    width: 100%;
+    height: var(--input-height);
+    padding-left: 0.5em;
+    border: 2px solid black;
+    background-color: var(--color-frame);
+    box-shadow: -2px -2px 0 var(--color-shadow-frame-dark) inset, 2px 2px 0 var(--color-shadow-frame-light) inset;
+}
+
+.toggle {
+    display: inline-block;
+}
+
+.toggle input[type=checkbox] {
+    display: none;
+}
+
+.toggle .text {
+    padding-left: 0.8em;
+    vertical-align: top;
+}
+
+.toggle span.value {
+    font-size: 0.4em;
+    font-weight: bolder;
+    position: relative;
+    top: 0;
+    left: 2px;
+    display: inline-block;
+    width: calc(var(--toggle-height) * 1.5);
+    height: calc(var(--toggle-height) - 6px);
+    border: 2px solid black;
+    background-color: #404040;
+}
+
+.toggle span.value:before {
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: -4px;
+    display: block;
+    width: calc(var(--toggle-height) * 0.6);
+    height: var(--toggle-height);
+    margin: -1px;
+    content: '';
+    transition: all 0.2s ease;
+    border: 2px solid black;
+    background-color: var(--color-frame);
+    box-shadow: -2px -2px 0 var(--color-shadow-frame-dark) inset, 2px 2px 0 var(--color-shadow-frame-light) inset;
+}
+
+.toggle span.value:after {
+    position: absolute;
+    right: 1em;
+    content: '◯';
+    color: #7f7f7f;
+}
+
+.toggle input:checked ~ span.value {
+    background-color: #7f7f7f;
+}
+
+.toggle input:checked ~ span.value:before {
+    left: calc(var(--toggle-height) * 0.6 * 1.5);
+}
+
+.toggle input:checked ~ span.value:after {
+    font-weight: bold;
+    left: 2.5em;
+    content: '|';
+    opacity: 0.8;
+    color: #404040;
+}
