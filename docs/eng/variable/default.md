@@ -12,3 +12,6 @@
 | ops | name of operators | [list [string]](#list) |
 | event | event when the recipe executes | [event](#event) |
 | target | a player/entity who executed the recipe | [player](#player), [entity](#entity) |
+
+> [!WARNING]
+> These variables are not updated during execution. If you want to get the exact current time with the `microtime`, `time`, or `date` variables, use the `server.microtime`, `server.time`, or `server.date` variables instead. 

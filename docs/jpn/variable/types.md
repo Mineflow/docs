@@ -330,6 +330,15 @@
 | port          | サーバーのport               | [number](#number)      |
 | start_time    | サーバーを起動した時間             | [number](#number)      |
 | tick          | サーバーのtick               | [number](#number)      |
+| microtime     | 現在のマイクロ秒                | [number](#number)      |
+| time          | 現在の時刻                   | [map](#map)            |
+| time.hours    | 現在の時間                   | [number](#number)      |
+| time.minutes  | 現在の分                    | [number](#number)      |
+| time.seconds  | 現在の秒                    | [number](#number)      |
+| date          | 現在の日付                   | [map](#map)            |
+| date.year     | 現在の年                    | [number](#number)      |
+| date.month    | 現在の月                    | [number](#number)      |
+| date.day      | 現在の日                    | [number](#number)      |
 | default_world | デフォルトのワールド              | [number](#number)      |
 | worlds        | サーバーに読み込まれたワールド         | [list [world]](#list)  |
 | players       | サーバーにいるプレイヤー            | [list [player]](#list) |

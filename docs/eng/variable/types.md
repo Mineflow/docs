@@ -329,6 +329,15 @@ properties:
 | ip            | server ip address      | [string](#string)      |
 | port          | server port            | [number](#number)      |
 | tick          | server tick            | [number](#number)      |
+| microtime     | current microtime      | [number](#number)      |
+| time          | current time           | [map](#map)            |
+| time.hours    | current hours          | [number](#number)      |
+| time.minutes  | current minutes        | [number](#number)      |
+| time.seconds  | current seconds        | [number](#number)      |
+| date          | current date           | [map](#map)            |
+| date.year     | current year           | [number](#number)      |
+| date.month    | current month          | [number](#number)      |
+| date.day      | current day            | [number](#number)      |
 | default_world | default world          | [number](#number)      |
 | worlds        | loaded worlds          | [list [world]](#list)  |
 | players       | players in the server  | [list [player]](#list) |

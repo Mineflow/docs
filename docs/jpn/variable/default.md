@@ -12,3 +12,6 @@
 | ops           | opの名前             | [list [string]](/variable/types.md#list)                                 |
 | event         | レシピを実行したときのイベント   | [event](/variable/types.md#event)                                        |
 | target        | 実行したプレイヤー(エンティティ) | [player](/variable/types.md#player), [entity](/variable/types.md#entity) |
+
+> [!WARNING]
+> これらの変数は実行中に更新されません．`microtime`, `time`, `date`変数で正確な現在の時刻を取得したい場合は`server.microtime`，`server.time`，`server.date`変数を使用してください． 
