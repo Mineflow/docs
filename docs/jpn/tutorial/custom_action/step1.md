@@ -145,7 +145,7 @@
 {
     "type": "form",
     "title": "addon/message/main",
-    "content": [
+    "contents": [
         "",
         "~~~~~~~~~~~~~",
         "",

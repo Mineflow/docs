@@ -18,7 +18,7 @@
     - [変数を使う](/tutorial/welcome_message/step3.md)
     - [レシピにトリガーを追加する](/tutorial/welcome_message/step4.md)
     - [条件分岐を使用する](/tutorial/welcome_message/step5.md)
-  - [カスタムアクション](/tutorial/custom_action/step1.md)
+  - カスタムアクション
     - [カスタムアクションのレシピを作成する](/tutorial/custom_action/step1.md)
     - [マニフェストレシピを作成する](/tutorial/custom_action/step2.md)
 - [API](/api.md)
