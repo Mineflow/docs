@@ -4,4 +4,4 @@
 
 [Trigger](/trigger/command.md)  
 
-[Tutorial](/TUTORIAL.md)  
+[Tutorial](/tutorial/tutorial.md)  

@@ -4,4 +4,4 @@
 
 [トリガー](/trigger/command.md)  
 
-[チュートリアル](/TUTORIAL.md)  
+[チュートリアル](/tutorial/tutorial.md)  

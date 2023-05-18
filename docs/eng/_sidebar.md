@@ -10,3 +10,11 @@
   - [Time trigger](/trigger/time.md)
   - [Event trigger](/trigger/event.md)
   - [Custom trigger](/trigger/custom.md)
+- Tutorial
+  - [Tutorial](/tutorial/tutorial.md)
+  - Welcome message
+    - [Create a new recipe](/tutorial/tutorial1/step1.md)
+    - [Add actions to a recipe](/tutorial/tutorial1/step2.md)
+    - [Use variables](/tutorial/tutorial1/step3.md)
+    - [Add triggers to a recipe](/tutorial/tutorial1/step4.md)
+    - [Use conditional actions](/tutorial/tutorial1/step5.md)

@@ -10,3 +10,12 @@
   - [時間トリガー](/trigger/time.md)
   - [イベントトリガー](/trigger/event.md)
   - [カスタムトリガー](/trigger/custom.md)
+- チュートリアル
+  - [チュートリアル](/tutorial/tutorial.md)
+  - ウェルカムメッセージ
+    - [新しいレシピを作成する](/tutorial/tutorial1/step1.md)
+    - [レシピにアクションを追加する](/tutorial/tutorial1/step2.md)
+    - [変数を使う](/tutorial/tutorial1/step3.md)
+    - [レシピにトリガーを追加する](/tutorial/tutorial1/step4.md)
+    - [条件分岐を使用する](/tutorial/tutorial1/step5.md)
+- [API](/api.md)
