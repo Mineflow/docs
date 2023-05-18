@@ -7,3 +7,5 @@
     4. [レシピにトリガーを追加する](/tutorial/welcome_message/step4.md)
     5. [条件分岐を使用する](/tutorial/welcome_message/step5.md)
 2. [カスタムアクション](/tutorial/custom_action/step1.md)
+   1. [カスタムアクションのレシピを作成する](/tutorial/custom_action/step1.md)
+   2. [マニフェストレシピを作成する](/tutorial/custom_action/step2.md)

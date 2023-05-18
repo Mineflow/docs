@@ -13,9 +13,12 @@
 - チュートリアル
   - [チュートリアル](/tutorial/tutorial.md)
   - ウェルカムメッセージ
-    - [新しいレシピを作成する](/tutorial/tutorial1/step1.md)
-    - [レシピにアクションを追加する](/tutorial/tutorial1/step2.md)
-    - [変数を使う](/tutorial/tutorial1/step3.md)
-    - [レシピにトリガーを追加する](/tutorial/tutorial1/step4.md)
-    - [条件分岐を使用する](/tutorial/tutorial1/step5.md)
+    - [新しいレシピを作成する](/tutorial/welcome_message/step1.md)
+    - [レシピにアクションを追加する](/tutorial/welcome_message/step2.md)
+    - [変数を使う](/tutorial/welcome_message/step3.md)
+    - [レシピにトリガーを追加する](/tutorial/welcome_message/step4.md)
+    - [条件分岐を使用する](/tutorial/welcome_message/step5.md)
+  - [カスタムアクション](/tutorial/custom_action/step1.md)
+    - [カスタムアクションのレシピを作成する](/tutorial/custom_action/step1.md)
+    - [マニフェストレシピを作成する](/tutorial/custom_action/step2.md)
 - [API](/api.md)
