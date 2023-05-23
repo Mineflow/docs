@@ -141,8 +141,8 @@ class AllowFlight extends FlowItem implements PlayerFlowItem {
 }
 ```
 
-> [!INFO]
-> `PlayerFlowItemTrait`を使用している場合は`$this->getOnlinePlayer($source)`指定した変数のプレイヤーを取得することが出来ます．
+> [!TIP]
+> `PlayerFlowItemTrait`を使用している場合は`$this->getOnlinePlayer($source)`で指定した変数のプレイヤーを取得することが出来ます．
 
 ## 5. 名前の設定
 
