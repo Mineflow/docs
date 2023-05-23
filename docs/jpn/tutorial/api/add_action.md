@@ -1,6 +1,6 @@
 # アクション/条件を追加する
 
-## クラスの作成
+## 1. クラスの作成
 
 `aieuo\mineflow\flowitem\FlowItem`を継承したクラスを作成します  
 条件の場合はインターフェース`aieuo\mineflow\flowitem\Condition`を実装してください  
@@ -22,7 +22,7 @@ class AllowFlight extends FlowItem {
 | 引数3 | `array  $permissions = []`  | アクションの権限  |
 
 
-## アクションで保持する値を設定する
+## 2. アクションで保持する値を設定する
 
 必要に応じてアクションで保持する値をクラスプロパティ等で定義します  
 
@@ -73,7 +73,7 @@ class AllowFlight extends FlowItem implements PlayerFlowItem {
 }
 ```
 
-## ファイルに保存する値とファイルから読み込む際の設定
+## 3. ファイルに保存する値とファイルから読み込む際の設定
 
 `public function loadSaveData(array $content): void`で読み込む際の処理を，
 `public function serializeContents(): array`で保存する値を設定します．
@@ -103,7 +103,7 @@ class AllowFlight extends FlowItem implements PlayerFlowItem {
 }
 ```
 
-## 処理の設定
+## 4. 処理の実装
 
 `protected function onExecute(FlowItemExecutor $source): \Generator`を追加し，アクション実行時の処理を記述します．  
 関数の最後には`yield Await::ALL;`と記述してください．  
@@ -144,7 +144,7 @@ class AllowFlight extends FlowItem implements PlayerFlowItem {
 > [!INFO]
 > `PlayerFlowItemTrait`を使用している場合は`$this->getOnlinePlayer($source)`指定した変数のプレイヤーを取得することが出来ます．
 
-## 名前の設定
+## 5. 名前の設定
 
 `ActionNameWithMineflowLanguage`/`ConditionNameWithMineflowLanguage`トレイトを使用し，
 名前とアクション設定時に表示される文，レシピのアクション一覧に表示される文を設定します．  
@@ -201,7 +201,7 @@ class AllowFlight extends FlowItem implements PlayerFlowItem {
 }
 ```
 
-## 設定フォーム
+## 6. 設定フォーム
 
 `HasSimpleEditForm`トレイトを使用し，設定フォームを作成します．
 
@@ -245,6 +245,12 @@ class AllowFlight extends FlowItem implements PlayerFlowItem {
 
     public function serializeContents(): array;
 }
+```
+
+## 7. FlowItemFactoryに登録する
+
+```php
+FlowItemFactory::register(new AllowFlight());
 ```
 
 ## クラスの全文
@@ -313,9 +319,3 @@ class AllowFlight extends FlowItem implements PlayerFlowItem {
 }
 ```
 </details>
-
-## FlowItemFactoryに登録する
-
-```php
-FlowItemFactory::register(new AllowFlight());
-```
