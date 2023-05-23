@@ -99,6 +99,49 @@ FlowItemCategory::add("script");
 FlowItemCategory::add("loop", "script");
 ```
 
+### `FlowItemCategory::all()`
+
+**カテゴリを全て取得する**
+
+|     | 型          | 説明       |
+|-----|------------|----------|
+| 戻り値 | `string[]` | カテゴリのリスト |
+
+```php
+use aieuo\mineflow\flowItem\FlowItemCategory;
+
+$categories = FlowItemCategory::all();
+```
+
+### `FlowItemCategory::root()`
+
+**親カテゴリを持たないカテゴリを全て取得する**
+
+|     | 型          | 説明       |
+|-----|------------|----------|
+| 戻り値 | `string[]` | カテゴリのリスト |
+
+```php
+use aieuo\mineflow\flowItem\FlowItemCategory;
+
+$categories = FlowItemCategory::root();
+```
+
+### `FlowItemCategory::getChildren()`
+
+**指定した親カテゴリのカテゴリを取得する**
+
+|     | 型                      | 説明       |
+|-----|------------------------|----------|
+| 引数1 | `?string $category` | 親カテゴリの名前 |
+| 戻り値 | `string[]`             | カテゴリのリスト |
+
+```php
+use aieuo\mineflow\flowItem\FlowItemCategory;
+
+$categories = FlowItemCategory::getChildren(FlowItemCategory::PLAYER);
+```
+
 ## aieuo\mineflow\variable\VariableHelper
 
 ### `VariableHelper->exists()`

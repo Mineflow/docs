@@ -21,4 +21,6 @@
   - カスタムアクション
     - [カスタムアクションのレシピを作成する](/tutorial/custom_action/step1.md)
     - [マニフェストレシピを作成する](/tutorial/custom_action/step2.md)
+  - API
+    - [アクション/条件を追加する](/tutorial/api/add_action.md)
 - [API](/api.md)
