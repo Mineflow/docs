@@ -130,14 +130,9 @@ class AllowFlight extends FlowItem implements PlayerFlowItem {
         yield Await::ALL;
     }
 
-    public function loadSaveData(array $content): void {
-        $this->setPlayerVariableName($content[0]);
-        $this->setAllowed($content[1]);
-    }
+    public function loadSaveData(array $content): void;
 
-    public function serializeContents(): array {
-        return [$this->getPlayerVariableName(), $this->isAllowed()];
-    }
+    public function serializeContents(): array;
 }
 ```
 
