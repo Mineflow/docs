@@ -7,7 +7,7 @@
 ```php
 class AllowFlight extends FlowItem {
     public function __construct() {
-        parent::__construct(self::ALLOW_FLIGHT, FlowItemCategory::PLAYER);
+        parent::__construct(self::ALLOW_FLIGHT, FlowItemCategory::PLAYER, [FlowItemPermission::CHEAT]);
     }
 }
 ```  
